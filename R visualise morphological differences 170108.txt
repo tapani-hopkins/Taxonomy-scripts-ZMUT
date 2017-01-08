@@ -1,0 +1,30 @@
+## Set the working directory (either the directory itself or any file in it)
+wd = "/Users/tapani/Desktop/R calculate mixed distances 170108"
+if (file.exists(wd) && !dir.exists(wd)){ wd = dirname(wd) }
+if (!dir.exists(wd)){ wd = file.choose(); if (!dir.exists(wd)) { wd = dirname(wd) } }
+setwd(wd)
+
+## Read the table, with rows for characters and columns for individuals
+aa = read.table("taxatest.csv", header=T, sep=",", row.names=1, na.string=c("NA","?",""))
+## Convert to rows for individuals and columns for characters
+a = data.frame(t(aa))
+
+# Import the required functions
+library(vegan)
+source("standardise.r")
+source("compare.r")
+source("dist.mixed.r")
+
+
+## Calculate distances between the species, and visualise by plotting with pco
+
+# Calculate distances between the 12 Rhyssinae species
+d = dist.mixed(a)
+
+# PCO
+mds = metaMDS(d)
+
+# Plot
+p = plot(mds, type="n")
+points(p$sites)
+text(p,"sites", pos=4, cex=0.5)
