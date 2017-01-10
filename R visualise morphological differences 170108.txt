@@ -1,5 +1,5 @@
-## Set the working directory (either the directory itself or any file in it)
-wd = "/Users/tapani/Desktop/R calculate mixed distances 170108"
+## Set the working directory (either this directory or any file in it)
+wd = "/Users/tapani/Desktop/Taxonomy scripts 170108"
 if (file.exists(wd) && !dir.exists(wd)){ wd = dirname(wd) }
 if (!dir.exists(wd)){ wd = file.choose(); if (!dir.exists(wd)) { wd = dirname(wd) } }
 setwd(wd)
@@ -11,9 +11,9 @@ a = data.frame(t(aa))
 
 # Import the required functions
 library(vegan)
-source("standardise.r")
-source("compare.r")
-source("dist.mixed.r")
+source("Morphological distances/standardise.r")
+source("Morphological distances/compare.r")
+source("Morphological distances/dist.mixed.r")
 
 
 ## Calculate distances between the species, and visualise by plotting with pco
