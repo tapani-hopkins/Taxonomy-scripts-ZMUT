@@ -8,7 +8,9 @@ Use any way you want, but please attribute.
 
 #### Morphological distances
 R functions used to calculate how morphologically similar different specimens are, and to visualise the result. 
+
 Function *dist.mixed* produces the morphological distances when given a table of character traits. It uses helper functions *compare* and *standardise*. Function *plot.dist* plots the (PCO analysed) distances in two dimensions. Function *plot.key* adds a visualisation of an identification key to the plot. Function *read.taxa* is a convenient way of reading the files with character traits into R. 
+
 Morphological distances can be used to group specimens into species. Or more commonly, to visualise the differences between species when making an identification key. Identification keys currently have to be made manually, but automatic generation of a key (based on species distances) will eventually become possible. 
 
 #### Uganda Rhyssinae diagnosis characters 170908
