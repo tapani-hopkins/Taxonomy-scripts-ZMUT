@@ -14,7 +14,7 @@ Function *dist.mixed* produces the morphological distances when given a table of
 Morphological distances can be used to group specimens into species. Or more commonly, to visualise the differences between species when making an identification key. Identification keys currently have to be made manually, but automatic generation of a key (based on species distances) will eventually become possible. 
 
 #### Write descriptions
-R functions that take a table of character traits, and convert it into a species description. The result can be pasted directly into a taxonomy article.
+R functions that take a table of character traits and convert it into species descriptions. The result can be pasted directly into a taxonomy article.
 
 #### Uganda Rhyssinae diagnosis characters 170908
 Test data. These are character traits of Afrotropical Rhyssinae, with the species in columns and characters in rows. There are several extra columns used for giving weights to characters, or when automatically generating species descriptions. (NB! This data is genuine but very preliminary, do not place any taxonomical trust in it)
