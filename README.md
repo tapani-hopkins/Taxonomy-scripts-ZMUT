@@ -19,8 +19,7 @@ R functions that take a table of character traits and convert it into species de
 #### Uganda Rhyssinae diagnosis characters 170915
 Test data. These are character traits of Afrotropical Rhyssinae, with the species in columns and characters in rows. There are several extra columns used for giving weights to characters, or when automatically generating species descriptions. (NB! This data is genuine but very preliminary, do not place any taxonomical trust in it)
 
-#### Uganda Rhyssinae key structure 170915
-#### Uganda Rhyssinae key structure shorthand
+#### Uganda Rhyssinae key structure 170915 / Uganda Rhyssinae key structure shorthand
 Test data. This is the structure of a preliminary identification key for the above Afrotropical Rhyssinae. It is in both longhand and shorthand formats: both are treated the same by the scripts.
 
 #### Visualise morphological differences 170915.R
